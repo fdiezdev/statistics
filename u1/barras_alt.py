@@ -38,7 +38,13 @@ for i in range(len(v)):
     v[i][2] = per
     y_percent.append(per)
 
-v.sort()
+y_percent.sort(reverse=True)
+y_total.sort(reverse=True)
+
+print("v = ", v)
+print("Total: ", total)
+print("Vector length: ", len(v))
+
 
 plt.bar(x, y_percent, color ='blue', width = 0.4)
 plt.xlabel(x_label)
@@ -52,7 +58,3 @@ plt.xlabel(x_label)
 plt.ylabel(y_label)
 plt.title(title)
 plt.show()
-
-print("v = ", v)
-print("Total: ", total)
-print("Vector length: ", len(v))
