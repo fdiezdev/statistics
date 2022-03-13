@@ -34,7 +34,7 @@ for i in range(0, len(v)):
 
 v_percent.sort(reverse=True)
 x.sort(reverse=True)
-y.sort(reverse=True)
+# y.sort(reverse=True)
 
 print(v_percent)
 
